@@ -8,28 +8,38 @@
   <title>myapp</title>
   <meta name="description" content="">
   <link href="./style.css" rel="stylesheet" type="text/css" />
-  <script>
-  function displayDate() {
-    document.getElementById(showdate).innerHTML=Date();
-  }
-  </script>
+  
 </head>
 
-<body>
-  <h2>Facebook Post</h2>
-  <div>
-  <button onclick="displayDate">  <img src="./Capture.PNG" alt="Profile image" id="showdate" class="pp"></button>
+<body onload ="displayCurrentDt();">
 
-    <p><strong>Shirley Mbabazi</strong></p>
-
-  </div>
+  <form>
+<table>
+  <tr>
+      <td>
+          <div class="pic-container pic-medium pic-circle">
+              <img class="pic" src="./Capture.PNG" alt="profile picture">
+              
+           </div>
+      </td>
+        <td>
+            <div>
+                <p class="pp"><strong>Shirley Mbabazi</strong></p>
+          
+            </div> 
+        </td>       
+     </tr>
+  
+</table>
   <p>Thank you to everyone who has celebrated with me<br> especially to my family and friends </br></p>
-  <img src="./cpp.PNG" alt="Post" class="pp">
+  <img src="./cpp.PNG" alt="Post" class="post">
   <div>
-    <button>Likes</button>
+    <button id= timedate onclick=" displayCurrentDt">Likes</button>
     <button>Comment</button>
     <button>Share</button>
   </div>
+</div>
+</form>
 </body>
 
 </html>
