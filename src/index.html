@@ -8,12 +8,13 @@
   <title>myapp</title>
   <meta name="description" content="">
   <link href="./style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
 
 </head>
@@ -38,26 +39,41 @@
       </tr>
 
     </table>
-    <p class="caption">Thank you to everyone who has celebrated with me<br> especially to my family and friends </br></p>
+    <p class="caption">Thank you to everyone who has celebrated with me<br> especially to my family and friends </br>
+    </p>
     <img src="./cpp.PNG" alt="Post" class="post">
-    
-    <div>
-      <span id="increase"></span>
+
+
+
+    <p></p>
+    <div class="container">
+      <div>
+        <span id="increase"></span>
+      </div>
+      <button id="like" class="btn btn-primary">
+        <ion-icon name="thumbs-up"></ion-icon>Like
+      </button>
+
+      <a id="commmentbutton" href="#usercomment" data-toggle="collapse" class="btn btn-info input-btn">
+        <ion-icon name="text"></ion-icon>comment
+      </a>
     </div>
-    <div >
-      <p></p>
-      
-      <button id= "like" class="btn btn-primary">Like</button>
-      
-      <a id = "commmentbutton" href = "#usercomment" data-toggle = "collapse" class = "btn btn info" > comment </a>
-      <div >
-      <input type = "text" id = "usercomment" class = "collapse">
-       </div>
-       
+    <div id="usercomment" class="collapse form-inline input-space md-form  col-xs-10 ">
+
+      <input type="text" class="form-control input-lg ">
+
+      <ion-icon name="arrow-forward"></ion-icon>
+
     </div>
-    </div>
+
+
   </form>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
